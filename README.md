@@ -12,7 +12,8 @@
 Este programa tem como objetivo determinar qual algoritmo de ordenação, dos algoritmos analisados, é a melhor opção para ordenar um vetor de inteiros positivos, e em qual situação cada algoritmo é recomendado.
 
 ## Como Compilar
-Utilize o comando 'make' no terminal do Linux.
+Utilize o comando 'make dir' para criar os diretórios bin, build, doc e tempos (caso não estejam criados).
+Depois utilize o comando 'make' no terminal do Linux.
 
 ## Como Executar
 
