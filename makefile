@@ -24,12 +24,12 @@ CFLAGS = -Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)
 
 .PHONY: all clean distclean doxy
 
-all: dir Sorting_Algorithms
+all: dir Sorting_Algorithms_Empirical_Analysis
 
 debug: CFLAGS += -g -O0 -pg
-debug: dir Sorting_Algorithms
+debug: dir Sorting_Algorithms_Empirical_Analysis
 
-Sorting_Algorithms: $(OBJ_DIR)/analysis_manager.o $(OBJ_DIR)/fill_manager.o $(OBJ_DIR)/simple_sorts.o $(OBJ_DIR)/bubble_sort_variants.o $(OBJ_DIR)/efficient_sorts.o $(OBJ_DIR)/distribution_sort.o $(OBJ_DIR)/main.o
+Sorting_Algorithms_Empirical_Analysis: $(OBJ_DIR)/analysis_manager.o $(OBJ_DIR)/fill_manager.o $(OBJ_DIR)/simple_sorts.o $(OBJ_DIR)/bubble_sort_variants.o $(OBJ_DIR)/efficient_sorts.o $(OBJ_DIR)/distribution_sort.o $(OBJ_DIR)/main.o
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
 	@echo ">>> [Executavel Sorter criado em $(BIN_DIR)]"
 
