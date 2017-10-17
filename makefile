@@ -68,10 +68,10 @@ dir:
 
 # Alvo (target) para analisar o código em busca de vazamento de memória
 valgrind_simple:
-	valgrind -v --leak-check=full --show-reachable=yes ./bin/Sorter
+	valgrind -v --leak-check=full --show-reachable=yes ./bin/Sorting_Algorithms_Empirical_Analysis
 
 valgrind_full:
-	valgrind -v --leak-check=full --show-reachable=yes --track-origins=yes ./bin/Sorter
+	valgrind -v --leak-check=full --show-reachable=yes --track-origins=yes ./bin/Sorting_Algorithms_Empirical_Analysis
 	
 # Alvo (target) usado para limpar os arquivos temporarios (objeto)
 # gerados durante a compilacao, assim como os arquivos binarios/executaveis.
